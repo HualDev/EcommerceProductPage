@@ -36,13 +36,126 @@ body{
     height: 1.2rem;
 }
 
+.subMenu{
+    display: none;
+}
+
 .right img{
     width: 2rem;
     height: 2rem;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header img{
     width: 100%;
+}
+
+.change{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12rem;
+}
+
+.change div{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change img{
+    width: 1rem;
+}
+
+section{
+    padding: 0 2rem;
+    margin-top: 12rem;
+}
+
+h1{
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+h2{
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--darkGrayishBlue);
+    line-height: 1.5;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-weight: 700;
+}
+
+.percent{
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    background-color: var(--paleOrange);
+    color: var(--orange);
+    border-radius: 0.5rem;
+}
+
+.beforePrice{
+    color: var(--darkGrayishBlue);
+    text-decoration: line-through;
+}
+
+.quantity{
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 1.2rem;
+    background-color: var(--lightGrayishBlue);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.quantity span{
+    font-size: 2rem;
+}
+
+.quantity img{
+    width: 1.3rem;
+}
+
+.button{
+    width: 100%;
+    background-color: var(--orange);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    gap: 1rem;
+    font-weight: 700;
+    box-shadow: 0 0.6rem 0 0 var(--paleOrange);;
 }
 
 
@@ -57,7 +170,7 @@ header img{
 footer{
     font-size: 1rem;
     text-align: center;
-
+    margin-top: 5rem;
 }
 footer a{
     color: hsl(228, 45%, 44%);
