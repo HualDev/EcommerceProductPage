@@ -37,7 +37,32 @@ body{
 }
 
 .subMenu{
-    display: none;
+    display:none;
+    position: absolute;
+    background-color: var(--white);
+    padding: 2rem 0;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    width: 60%;
+}
+
+.subMenu img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
+}
+
+ul{
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.5;
+    margin: -10rem 0 0 0;
+}
+
+li{
+    list-style: none;
 }
 
 .right img{
@@ -155,17 +180,8 @@ p{
     color: var(--white);
     gap: 1rem;
     font-weight: 700;
-    box-shadow: 0 0.6rem 0 0 var(--paleOrange);;
+    box-shadow: 0 0.6rem 0 0 var(--paleOrange);
 }
-
-
-
-
-
-
-
-
-
 
 footer{
     font-size: 1rem;
