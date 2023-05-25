@@ -65,9 +65,30 @@ li{
     list-style: none;
 }
 
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: var(--orange);
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 2.1rem;
+}
+
 .right img{
     width: 2rem;
     height: 2rem;
+}
+
+#cart:hover{
+    cursor: pointer;
+}
+
+.avatar{
+    border-radius: 50%;
+}
+
+.avatar:hover{
+    border: solid 2px var(--orange);
+    cursor: pointer;
 }
 
 hr{
@@ -95,6 +116,11 @@ header{
 
 .productImages{
     display: none;
+}
+
+.productImages img:hover{
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 .change{
@@ -137,6 +163,7 @@ p{
     font-size: 1.5rem;
     color: var(--darkGrayishBlue);
     line-height: 1.5;
+    text-align: justify;
 }
 
 .price{
@@ -185,6 +212,10 @@ p{
     width: 1.3rem;
 }
 
+.quantity img:hover{
+    cursor: pointer;
+}
+
 .button{
     width: 100%;
     background-color: var(--orange);
@@ -199,10 +230,15 @@ p{
     box-shadow: 0 0.6rem 0 0 var(--paleOrange);
 }
 
+.button:hover{
+    cursor: pointer;
+}
+
 footer{
     font-size: 1rem;
     text-align: center;
     margin-top: 5rem;
+    padding: 2rem 0;
 }
 footer a{
     color: hsl(228, 45%, 44%);
@@ -290,7 +326,7 @@ footer a{
 
     section{
         margin-top: 0;
-        width: 60%;
+        width: 50%;
     }
 
     h1{
