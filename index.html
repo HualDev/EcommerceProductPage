@@ -21,7 +21,7 @@
       <div class="left">
         <img id="menuImage" src="./images/icon-menu.svg" alt="Menu Icon">
         <img src="./images/logo.svg" alt="Logo Image">
-        <div class="subMenu">
+        <div id="subMenu" class="subMenu">
           <img id="closeImage" src="./images/icon-close.svg" alt="Close Image">
           <ul>
             <li>Collections</li>
@@ -34,6 +34,7 @@
       </div>
       <div class="right">
         <img id="cart" src="./images/icon-cart.svg" alt="Cart Image">
+        <div id="productsCart" class="productsCart">0</div>
         <img class="avatar" src="./images/image-avatar.png" alt="Avatar Image">
       </div>
     </div>
@@ -45,15 +46,15 @@
         <header>    
           <img id="product" src="./images/image-product-1.jpg" alt="Product Image">
           <div class="change">
-            <div><img src="./images/icon-previous.svg" alt="Previous Icon"></div>
-            <div><img src="./images/icon-next.svg" alt="Next Icon"></div>        
+            <div id="previous"><img src="./images/icon-previous.svg" alt="Previous Icon"></div>
+            <div id="next"><img src="./images/icon-next.svg" alt="Next Icon"></div>        
           </div>
         </header>
         <div class="productImages">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="product Image">
-          <img src="./images/image-product-2-thumbnail.jpg" alt="product Image">
-          <img src="./images/image-product-3-thumbnail.jpg" alt="product Image">
-          <img src="./images/image-product-4-thumbnail.jpg" alt="product Image">
+          <img class="productImage" src="./images/image-product-1-thumbnail.jpg" alt="product Image">
+          <img class="productImage" src="./images/image-product-2-thumbnail.jpg" alt="product Image">
+          <img class="productImage" src="./images/image-product-3-thumbnail.jpg" alt="product Image">
+          <img class="productImage" src="./images/image-product-4-thumbnail.jpg" alt="product Image">
         </div>
       </div>
 
@@ -75,11 +76,11 @@
         <div class="action">
 
           <div class="quantity">
-            <img src="./images/icon-minus.svg" alt="Minus Icon">
-            <span>0</span>
-            <img src="./images/icon-plus.svg" alt="Plus Icon">
+            <img id="minus" src="./images/icon-minus.svg" alt="Minus Icon">
+            <span id="quantity">0</span>
+            <img id="plus" src="./images/icon-plus.svg" alt="Plus Icon">
           </div>
-          <div class="button">
+          <div id="addButton" class="button">
             <img src="./images/icon-cart1.svg" alt="cart Image">
             <span>Add to cart</span>
           </div>
