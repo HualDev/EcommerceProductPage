@@ -116,6 +116,11 @@ hr{
     width: 100%;
 }
 
+#products1{
+    display: none;
+    height: 60vh;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -125,6 +130,22 @@ header{
 
 #product{
     width: 100%;
+}
+
+#product:hover{
+    cursor: pointer;
+}
+
+#product1{
+    width: 92%;
+    border-radius: 1rem;
+}
+
+#closeImage1{
+    position: absolute;
+    right: 1rem;
+    top: -1.5rem;
+    fill: rebeccapurple;
 }
 
 .productImages{
@@ -240,7 +261,7 @@ p{
     color: var(--white);
     gap: 1rem;
     font-weight: 700;
-    box-shadow: 0 0.6rem 0 0 var(--paleOrange);
+    box-shadow: 0 2.5rem 1.8rem -0.5rem var(--paleOrange);
 }
 
 .button:hover{
