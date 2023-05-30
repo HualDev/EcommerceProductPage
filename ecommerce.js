@@ -46,7 +46,6 @@ decrease.addEventListener('click',()=>{
 })
 
 cart.addEventListener('click',()=>{
-    console.log(productsCart.textContent)
     if(productsCart.textContent==0){
         cartDetails.style.display='block'
         productPrice.style.display='none'

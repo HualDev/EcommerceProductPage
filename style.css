@@ -324,6 +324,12 @@ p{
 
 .delete{
     height: 1rem;
+    cursor: pointer;
+}
+
+#checkButton{
+    width: 90%;
+    margin: auto;
 }
 
 #nothing{
@@ -474,5 +480,13 @@ footer a{
     .button{
         height: 3rem;
         align-items: center;
+    }
+
+    .cartDetails{
+        width: 35%;
+        margin: 1rem;
+        left: auto;
+        top: 3rem;
+        box-shadow: 0 1.5rem 1.8rem -0.5rem var(--darkGrayishBlue);
     }
 }
