@@ -37,7 +37,7 @@ body{
 }
 
 .subMenu{
-    display:block;
+    display:none;
     position: absolute;
     background-color: var(--white);
     padding: 2rem 0;
@@ -318,8 +318,19 @@ p{
     margin: 0;
 }
 
+#total{
+    font-weight: 700;
+}
+
 .delete{
     height: 1rem;
+}
+
+#nothing{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
 }
 
 footer{

@@ -20,8 +20,46 @@ const closeImage1 = document.getElementById('closeImage1')
 const body = document.getElementById('body')
 const change1 = document.getElementById('change1')
 const productImages1 = document.getElementById('productImages1')
+const cartDetails = document.getElementById('cartDetails')
+const cart = document.getElementById('cart')
+let productPrice =document.getElementById('productPrice')
+let nothing = document.getElementById('nothing')
+let checkButton = document.getElementById('checkButton')
+let quanty = document.getElementById('quanty')
+let total = document.getElementById('total')
+const decrease = document.getElementById('delete')
 
+checkButton.addEventListener('click',()=>{
+    cartDetails.style.display='none'
+})
 
+decrease.addEventListener('click',()=>{
+    if(quanty.innerHTML==0){
+        total.textContent=`$0.00`
+        return
+    }
+    else{
+        quanty.innerHTML--
+        quanty.textContent=quanty.textContent
+        total.textContent=`$${quanty.textContent*125}.00`
+    }
+})
+
+cart.addEventListener('click',()=>{
+    console.log(productsCart.textContent)
+    if(productsCart.textContent==0){
+        cartDetails.style.display='block'
+        productPrice.style.display='none'
+        nothing.style.display='flex'
+        checkButton.style.display='none'
+    }
+    else{
+        cartDetails.style.display='block'
+        nothing.style.display='none'
+        productPrice.style.display='flex'
+        checkButton.style.display='flex'
+    }
+})
 
 for(let i=0;i<productImage.length;i++){
     productImage[i].addEventListener('click',()=>{
@@ -57,6 +95,8 @@ addButton.addEventListener('click',()=>{
     else{
         productsCart.style.display='flex'
         productsCart.textContent=quantity.textContent
+        quanty.textContent=quantity.textContent
+        total.textContent=`$ ${quantity.textContent*125}.00`
     }    
 })
 
