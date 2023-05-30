@@ -283,6 +283,45 @@ p{
     cursor: pointer;
 }
 
+.cartDetails{
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    top: 6.5rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 95%;
+    padding: 1rem 1rem 2rem;
+    border-radius: 1rem;
+}
+
+#hrCart{
+    display: block;
+}
+
+.productPrice{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
+.cartImage{
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.productPrice p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.delete{
+    height: 1rem;
+}
+
 footer{
     font-size: 1rem;
     text-align: center;
