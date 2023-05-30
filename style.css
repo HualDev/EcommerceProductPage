@@ -141,11 +141,18 @@ header{
     border-radius: 1rem;
 }
 
+.productImages1{
+    width: 92%;
+}
+
 #closeImage1{
     position: absolute;
     right: 1rem;
     top: -1.5rem;
-    fill: rebeccapurple;
+}
+
+#closeImage1:hover{
+    cursor: pointer;
 }
 
 .productImages{
@@ -176,6 +183,14 @@ header{
 
 .change img{
     width: 1rem;
+}
+
+#next1{
+    cursor: pointer;
+}
+
+#previous1{
+    cursor: pointer;
 }
 
 section{
