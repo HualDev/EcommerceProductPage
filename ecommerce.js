@@ -36,12 +36,14 @@ checkButton.addEventListener('click',()=>{
 decrease.addEventListener('click',()=>{
     if(quanty.innerHTML==0){
         total.textContent=`$0.00`
+        productsCart.style.display='none'
         return
     }
     else{
         quanty.innerHTML--
         quanty.textContent=quanty.textContent
         total.textContent=`$${quanty.textContent*125}.00`
+        productsCart.textContent=quanty.textContent
     }
 })
 
@@ -107,6 +109,7 @@ next.addEventListener('click',()=>{
         number++
     }else{
         number=0
+        product.src=`./images/image-product-${number+1}.jpg`
     }    
 })
 
@@ -122,7 +125,7 @@ next1.addEventListener('click',()=>{
 
 previous.addEventListener('click',()=>{
     number--
-    if(number==0){
+    if(number===0){
         number=4
         product.src=`./images/image-product-${number}.jpg`
     }
